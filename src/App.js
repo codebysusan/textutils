@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
 import TextArea from "./Components/TextArea";
 import About from "./Components/About";
@@ -21,18 +21,16 @@ function App() {
       setMode("light");
     }
   }
-
   return (
-    <>
-      <Router>
-        <Navbar mode={mode} toggleMode={toggleMode} />
-        <Routes>
-          <Route exact path="/About" element={<About mode={mode} />} />
-          <Route path="" element={<TextArea mode={mode} />}>
-          </Route>
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Navbar mode={mode} toggleMode={toggleMode} />
+      <Routes>
+        <Route exact path="/About" element={<About mode={mode} />} />
+        <Route path="" element={<TextArea mode={mode} />}>
+        </Route>
+      </Routes>
+    </Router>
+
   );
 }
 

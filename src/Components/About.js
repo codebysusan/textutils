@@ -1,4 +1,4 @@
-// import React, { useState } from 'react'
+import React from "react";
 
 export default function About(props) {
     return (
@@ -21,7 +21,7 @@ export default function About(props) {
                 <span className="px-5">
                     <a className="text-decoration-none text-reset fs-5" href="https://github.com/codewithsusan/TextUtils-React" target="blank">Github</a>
                 </span>
-                <code className="d-block mt-5 fs-6 text-reset">Made with ❤️ by Susan.</code>
+                <code className="d-block mt-5 fs-6 text-reset" >Made with <span role="img" aria-label="love-emoji" >❤️</span>  by Susan.</code>
             </footer>
 
         </div>
